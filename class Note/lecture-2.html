@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Guide: Lists and Tables</title>
+</head>
+<body>
+
+    <header>
+        <h1>HTML Guide: Nested Lists and Tables</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Nested Lists</h2>
+            <p>A nested list is a list placed inside another list. This is useful for creating a hierarchical structure for your content, such as an outline or a menu.</p>
+
+            <h3>1. Example of a Nested List</h3>
+            <ul>
+                <li>Countries
+                    <ol>
+                        <li>India
+                            <ul>
+                                <li>Delhi</li>
+                                <li>Mumbai</li>
+                                <li>Goa</li>
+                            </ul>
+                        </li>
+                        <li>USA</li>
+                        <li>England</li>
+                    </ol>
+                </li>
+                <li>Continents
+                    <ol>
+                        <li>Asia</li>
+                        <li>North America</li>
+                        <li>Europe</li>
+                    </ol>
+                </li>
+            </ul>
+            <img src="./nested list.png" height="200" alt="nested list">
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>HTML Tables</h2>
+            <p>HTML tables are used to display data in a grid of rows and columns. They are a powerful way to organize information on a webpage.</p>
+
+            <h3>1. Creating a Simple Table</h3>
+            <p>Tables are created using the `<table>` tag. Rows are defined with `<tr>` and data cells with `<td>`.</p>
+            <table border="1">
+                <tr>
+                    <td>Row 1, Cell 1</td>
+                    <td>Row 1, Cell 2</td>
+                </tr>
+                <tr>
+                    <td>Row 2, Cell 1</td>
+                    <td>Row 2, Cell 2</td>
+                </tr>
+                <img src="./tables.png" height="200" alt="tables">
+            </table>
+            
+            <h3>2. Understanding `rowspan` and `colspan`</h3>
+            <p>These attributes allow a single table cell to span across multiple rows or columns.</p>
+            
+            <h4>Example of `colspan`</h4>
+            <p>This cell spans two columns.</p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th colspan="2" scope="colgroup">Personal Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td>Email</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>Example of `rowspan`</h4>
+            <p>This cell spans two rows.</p>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Category</td>
+                        <td>Item A</td>
+                    </tr>
+                    <tr>
+                        <td>Item B</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <a href="./lecture-3.html">Next page</a>
+        <br>
+        <a href="./lecture-1.html">Previous page</a>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Web Development Guide. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

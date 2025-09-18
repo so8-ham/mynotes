@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+
+    <header>
+        <h1>Creating Forms in HTML</h1>
+        <p>A guide to collecting user information on your webpage.</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>The First Principle</h2>
+            <p>The web is a two-way street. Forms allow us to collect and send information from the user to the server. Without forms, you couldn't log in, search for a video, or buy a product.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>User Profile Form</h2>
+            <p>This form demonstrates a variety of common input types, now with labels and proper connections using `id` and `for` attributes, as well as the `name` attribute for data submission.</p>
+
+            <form action="/submit-form" method="post">
+                <label for="firstName">First Name:</label><br>
+                <input type="text" id="firstName" name="firstName" placeholder="e.g., John" required><br><br>
+
+                <label for="lastName">Last Name:</label><br>
+                <input type="text" id="lastName" name="lastName" placeholder="e.g., Doe" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="e.g., john.doe@example.com" required><br><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob"><br><br>
+
+                <p><strong>T-Shirt Size:</strong></p>
+                <input type="radio" id="sizeS" name="shirtSize" value="small">
+                <label for="sizeS">Small</label><br>
+
+                <input type="radio" id="sizeM" name="shirtSize" value="medium">
+                <label for="sizeM">Medium</label><br>
+
+                <input type="radio" id="sizeL" name="shirtSize" value="large">
+                <label for="sizeL">Large</label><br><br>
+
+                <p><strong>Pizza Toppings:</strong></p>
+                <input type="checkbox" id="toppingPep" name="toppings" value="pepperoni">
+                <label for="toppingPep">Pepperoni</label><br>
+
+                <input type="checkbox" id="toppingMush" name="toppings" value="mushrooms">
+                <label for="toppingMush">Mushrooms</label><br>
+
+                <input type="checkbox" id="toppingOni" name="toppings" value="onions">
+                <label for="toppingOni">Onions</label><br><br>
+
+                <label for="country">Country:</label><br>
+                <select id="country" name="country" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="in">India</option>
+                    <option value="us">USA</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="au">Australia</option>
+                </select><br><br>
+
+                <label for="comments">Any special instructions?</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+                <button type="submit"><strong>Submit</strong> Your Order</button>
+            </form>
+            
+                        <img src="./form.png" height="200" width="200" alt="Advanced Form">
+                        <img src="./date.png" height="200" width="200" alt="Date Picker">
+                        <img src="./comment.png" height="200" width="200" alt="Comment Box">
+                        <img src="./cheeck box.png" height="200" width="200" alt="Checkbox">
+                        <img src="./dropdown.png" height="200" width="200" alt="Dropdown">
+                        <img src="./password.png" height="200" width="200" alt="Password">
+                        <img src="./number.png" height="200" width="200" alt="Number">
+                        <img src="./submit.png" height="200" width="200" alt="Submit">
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>More Specialized Inputs</h2>
+            <p>These powerful HTML5 input types make forms even more user-friendly.</p>
+            <form action="/submit-advanced" method="post">
+                <label for="userAge">Age (18-99):</label><br>
+                <input type="number" id="userAge" name="age" min="18" max="99"><br><br>
+
+                <label for="favoriteColor">Favorite Color:</label><br>
+                <input type="color" id="favoriteColor" name="color"><br><br>
+
+                <label for="volume">Volume (0-100):</label><br>
+                <input type="range" id="volume" name="volume" min="0" max="100"><br><br>
+
+                <label for="profilePicture">Upload Profile Picture:</label><br>
+                <input type="file" id="profilePicture" name="profilePicture"><br><br>
+
+                <button type="submit">Submit Advanced Form</button>
+            </form>
+
+        </section>
+   
+    </main>
+
+    <footer>
+        <a href="./lecture-5.html">Next page</a>
+        <br>
+        <a href="./lecture-3.html">Previous page</a>
+        <hr>
+        <p>&copy; 2025 Web Development Guide. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

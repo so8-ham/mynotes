@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+</head>
+<body>
+
+    <header>
+        <h1>Lecture-1 on HTML</h1>
+        <hr>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about-html">About HTML</a></li>
+            <li><a href="#tags">HTML Tags</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <main>
+        <h2 id="about-html">About HyperText Markup Language</h2>
+        <p>HTML stands for HyperText Markup Language. It's the standard language for creating webpages. This page uses a variety of HTML tags to structure its content.</p>
+
+        <h2 id="tags">HTML Tags</h2>
+
+        <ul>
+            <li>
+                <h3>Heading Tags</h3>
+                <p><strong>What it is:</strong> Headings are tags used to define titles and subtitles on your page. They are crucial for creating a logical hierarchy and outline for your content.
+                <br><br>
+                <strong>The Purpose:</strong> To structure your document in a way that is understandable to both humans and machines (like search engines and screen readers). It is <strong>not</strong> just for making text big; it is for giving the text structural importance.</p>
+                <img src="./heading.png" height="200" alt="heading tag">
+            </li>
+            <hr>
+            <li>
+                <h3>The Paragraph Tag</h3>
+                <p><strong>What it is:</strong> The paragraph tag is the most common tag you'll use. It's for grouping sentences and blocks of text together.
+                <br><br>
+                <strong>The Purpose:</strong> To define a distinct paragraph of text. Browsers automatically add a little bit of space before and after a `p` element, separating it from other content. You should not use multiple line breaks; you should use multiple `p` tags.
+                </p>
+                <img src="./p.png" height="200" alt="paragraph tag">
+            </li>
+            <hr>
+            <li>
+                <h3>HTML Horizontal Rule</h3>
+                <p>1) The <code>&lt;hr&gt;</code> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+                <br>
+                2) The <code>&lt;hr&gt;</code> element is used to separate content (or define a change) in an HTML page:</p>
+                <img src="./hr.png" height="200" alt="horizontal rule tag">
+            </li>
+            <hr>
+            <li>
+                <h3>The Line Break Tag</h3>
+                <p>This tag tells the browser, "Stop writing on this line and immediately start on the next one." It's like hitting the Enter key once in a poem or an address.
+                <br>
+                <ol>
+                    <li><strong>Purpose:</strong> Creates a single line break.</li>
+                    <li><strong>Example:</strong> `This is the first line.<br>This is the second line.`</li>
+                </ol>
+                <img src="./br.png" height="200" alt="line break tag">
+                </p>
+            </li>
+            <hr>
+            <li>
+                <h3>List Elements</h3>
+                <p><strong>What it is:</strong> These tags are used to create lists. This is a perfect example of nesting.
+                <br>
+                <ol>
+                    <li>An `<ul>` (Unordered List) creates a bulleted list.</li>
+                    <li>An `<ol>` (Ordered List) creates a numbered list.</li>
+                    <li>A `<li>` (List Item) must be wrapped in a list tag.</li>
+                </ol>
+                <p><strong>The Purpose:</strong> To group related items together in a list format.</p>
+                </p>
+                <img src="./ul and ol.png" height="200" alt="list tag">
+            </li>
+            <hr>
+            <li>
+                <h3>The Anchor Tag</h3>
+                <p><strong>What it is:</strong> The Anchor tag is what makes the web "hypertext." It is used to create a hyperlink to another webpage, a file, or a location within the same page.
+                <br>
+                <strong>The Purpose:</strong> To make text (or an image) clickable, allowing users to navigate. It requires an attribute called <code>href</code> (hypertext reference) to specify the destination URL.</p>
+                <img src="./a.png" height="200" alt="link tag">
+            </li>
+            <hr>
+            <li>
+                <h3>HTML Links - The `target` Attribute</h3>
+                <p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.</p>
+                <img src="./link.png" height="200" alt="link tag">
+            </li>
+            <hr>
+            <li>
+                <h3>The Image Tag</h3>
+                <p><strong>What it is:</strong> The Image tag is a self-closing tag used to embed an image onto your page.
+                <br><br>
+                <strong>The Purpose:</strong> To display a visual image. It requires two main attributes:
+                <br><br>
+                - <code>src</code> (source): The path or URL to the image file. This is mandatory.
+                <br><br>
+                - <code>alt</code> (alternative text): A description of the image. This is vital for accessibility (screen readers for the visually impaired will read this out) and for when the image fails to load.
+                </p>
+                <img src="./image.png" height="200" alt="image tag">
+            </li>
+        </ul>
+        <hr>
+
+        <h3>List Types Comparison</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>&lt;ul&gt;</code></td>
+                    <td>Unordered List</td>
+                    <td>Creates a bulleted list of items.</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;ol&gt;</code></td>
+                    <td>Ordered List</td>
+                    <td>Creates a numbered list of items.</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+
+        <h2 id="contact">Contact Me</h2>
+        <form action="/submit-form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="message">Message:</label>
+            <br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+        <hr>
+
+        <h3>Example of Video Embedding</h3>
+<p>You can embed videos using the <code>&lt;iframe&gt;</code> tag for YouTube.</p>
+<iframe width="320" height="240" src="https://www.youtube.com/embed/GkZN_-HMCJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <hr>
+
+        <p>You can find more information about HTML on the: <a href="https://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">first website ever created</a>.</p>
+        <a href="./lecture-2.html">Next page</a>
+        <br>
+        <a href="./internet.html">Previous page</a>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 My Webpage</p>
+    </footer>
+
+</body>
+</html>
